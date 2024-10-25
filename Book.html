@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book List</title>
+      <!-- Add CSS styles -->
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Books Table (List)</h2>
+    <table id="listTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Published Year</th>
+                <th>ISBN</th>
+                <th>Stock</th>
+                <th>Price</th>
+            </tr>  
+        </thead>
+        <tbody>
+            <th id="book-id-list"></th>
+            <th id="book-title-list"></th>
+            <th id="book-author-list"></th>
+            <th id="book-genre-list"></th>
+            <th id="book-publish-list"></th>
+            <th id="book-isbn-list"></th>
+            <th id="book-stock-list"></th>
+            <th id="book-price-list"></th>
+        </tbody>
+    </table>
+    
+    <h2>Books Table (Object)</h2>
+    <table id="objectTable">
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <h2>Books Table (List of Object)</h2>
+    <table id="booksTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Published Year</th>
+                <th>ISBN</th>
+                <th>Stock</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be populated here using JavaScript -->
+        </tbody>
+    
+   <script src="book_script.js"></script> <!-- Linking the JavaScript file -->
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>University  List</title>
+      <!-- Add CSS styles -->
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>University Table (List)</h2>
+    <table id="listTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Established Year</th>
+                <th>Type</th>
+                <th>Website</th>
+            </tr>  
+        </thead>
+        <tbody>
+            <th id="Uni-id-list"></th>
+            <th id="Uni-name-list"></th>
+            <th id="Uni-loc-list"></th>
+            <th id="Uni-year-list"></th>
+            <th id="Uni-type-list"></th>
+            <th id="Uni-web-list"></th>
+        </tbody>
+    </table>
+    
+    <h2>University  Table (Object)</h2>
+    <table id="objectTable">
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <h2>University Table (List of Object)</h2>
+    <table id="universityTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Established Year</th>
+                <th>Type</th>
+                <th>Website</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be populated here using JavaScript -->
+        </tbody>
+    </table>
+    
+   <script src="uni_script.js"></script> <!-- Linking the JavaScript file -->
+</body>
+</html>
